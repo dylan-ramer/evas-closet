@@ -1,1 +1,13 @@
+# Python
 venv/
+*.pyc
+__pycache__/
+
+# Database
+closet.db
+
+# IDE
+.vscode/
+
+# Development plan
+development_plan.md
