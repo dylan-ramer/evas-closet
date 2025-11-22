@@ -42,7 +42,7 @@ TBD
 
 ## Contributors
 
-Project and Development Lead: [`@dylan-ramer`](https://github-com/dylan-ramer)
+Project and Development Lead: [`@dylan-ramer`](https://github.com/dylan-ramer)
 
 ## License
 
