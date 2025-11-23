@@ -50,4 +50,7 @@ Project and Development Lead: [`@dylan-ramer`](https://github.com/dylan-ramer)
 
 ## License
 
-TBD
+This project is licensed under the **GNU General Public License v3.0**.
+Anyone is free to use, alter, or distribute this software, however derivative work must be released open-source under the same license.
+
+See [LICENSE](./LICENSE) for more information.
