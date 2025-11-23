@@ -1,8 +1,8 @@
-"""init: defined inital User, Catalog, and Action tables
+"""init: User, Catalog, and Actions tables
 
-Revision ID: de02277e08c4
+Revision ID: 47b89ffe114a
 Revises: 
-Create Date: 2025-11-22 18:11:36.785705
+Create Date: 2025-11-22 19:46:23.589893
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'de02277e08c4'
+revision = '47b89ffe114a'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -23,9 +23,11 @@ def upgrade():
     sa.Column('first_name', sa.String(length=32), nullable=False),
     sa.Column('last_name', sa.String(length=32), nullable=True),
     sa.Column('username', sa.String(length=64), nullable=False),
+    sa.Column('email', sa.String(length=128), nullable=False),
     sa.Column('password_hash', sa.String(length=128), nullable=True),
-    sa.Column('role', sa.String(length=10), nullable=True),
-    sa.PrimaryKeyConstraint('id')
+    sa.Column('role', sa.Enum('basic', 'admin', name='role_enum'), nullable=True),
+    sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('email')
     )
     with op.batch_alter_table('users', schema=None) as batch_op:
         batch_op.create_index(batch_op.f('ix_users_role'), ['role'], unique=False)

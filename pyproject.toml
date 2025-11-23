@@ -1,0 +1,17 @@
+[tool.black]
+exclude = '''(
+    /migrations
+    | /venv
+    | __pycache__
+)'''
+line-length = 88
+target-version = ["py312"]
+
+[tool.isort]
+skip = [
+    "migrations",
+    "venv",
+    "__pycache__"
+]
+profile = "black"
+line_length = 88
