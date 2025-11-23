@@ -1,4 +1,4 @@
-name: Eva's Closet CI Pipeline
+name: CI Pipeline
 
 on: [push, pull_request]
 

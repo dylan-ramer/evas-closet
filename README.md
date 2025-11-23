@@ -1,6 +1,6 @@
 # Evas Closet
 
-![CI Pipeline](https://github.com/dylan-ramer/eva-closet/actions/workflows/ci.yml/badge.svg)
+![CI Pipeline](https://github.com/dylan-ramer/evas-closet/actions/workflows/ci.yml/badge.svg)
 
 A simple wardrobe tracking application. Manage clothes per-piece with image, color, size, and condition data.
 
